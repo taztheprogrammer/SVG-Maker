@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+
+body {
+    padding: 0;
+    margin: 0;
+    max-width: 1000px;
+    margin: auto;
+    background-color: antiquewhite;
+}
+
+.flex-box {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.left-bar {
+    width: 20%;
+    height: 80vh;
+}
+
+
+.main-bar {
+    width: 60%;
+    height: 80vh;
+}
+
+
+.right-bar {
+    width: 20%;
+    height: 80vh;
+}
+
+
+footer {
+    height: 20vh;
+}
