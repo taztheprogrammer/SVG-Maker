@@ -8,16 +8,43 @@
 </head>
 <body>
     <div class="flex-box">
-    <div class="left-bar">
-        option
-        <label>
-        </label>
+    <div class="left-bar"></div>
+    <div class="main-bar">
+        <div id="canvas">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+                <rect x=125 y=125 width=250 height=250 />
+            </svg>
+        </div>
+        <div id="sliders">
+            <label for="length">VB-Width</label>
+            <input value="500" id="length" name="length" type="range" min="0" max="500"  oninput="updateValue('length')">
+            <p id="length-val">500</p>
 
+            <label for="height">VB-Height</label>
+            <input value="500" id="height"  name="height" type="range" min="0" max="500"  oninput="updateValue('height')">
+            <p id="height-val">500</p>
+
+            <label for="X">R-X</label>
+            <input value="125" id="X"  name="X" type="range" min="0" max="500"  oninput="updateValue('X')">
+            <p id="X-val">125</p>
+
+            <label for="Y">R-Y</label>
+            <input value="125" id="Y"  name="Y" type="range" min="0" max="500"  oninput="updateValue('X')">
+            <p id="Y-val">125</p>
+
+            <label for="W">R-W</label>
+            <input value="250" id="W"  name="W" type="range" min="0" max="500"  oninput="updateValue('W')">
+            <p id="W-val">250</p>
+
+            <label for="H">R-H</label>
+            <input value="250" id="H"  name="H" type="range" min="0" max="500"  oninput="updateValue('H')">
+            <p id="H-val">250</p>
+
+        </div>
     </div>
-    <div class="main-bar">grid</div>
-    <div class="right-bar">right</div>
-    </div>
+    
+    <div class="right-bar"></div></div>
     <script src="script.js"></script>
-    <footer>credits</footer>
+    <footer></footer>
 </body>
 </html>
